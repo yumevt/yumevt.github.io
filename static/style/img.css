@@ -1,5 +1,5 @@
-.fa {
-    content: url("../img/2/fa.png");
+.love {
+    content: url("../media/img/1/love.png");
     display: block;
     transform: scale(0.95, 0.95);
     max-width: 100%;
@@ -12,8 +12,8 @@
     padding-bottom: 120px;
 }
 
-.Q {
-    content: url("../img/2/Q.png");
+.mad {
+    content: url("../media/img/1/mad.png");
     display: block;
     max-width: 100%;
     max-height: 100%;

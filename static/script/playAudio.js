@@ -1,7 +1,7 @@
-const faQ = new Audio("../static/media/faQ.mp3");
+const yumevt = new Audio("../static/media/audio/dadada.mp3");
 
 function playAudio() {
-    faQ.pause();
-    faQ.currentTime = 0;
-    faQ.play();
+    yumevt.pause();
+    yumevt.currentTime = 0;
+    yumevt.play();
 }

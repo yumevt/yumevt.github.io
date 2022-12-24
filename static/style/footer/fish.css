@@ -1,95 +1,31 @@
-@keyframes pop_R-L {
+@keyframes pop {
     0% {
         opacity: 1;
-        transform: rotate(180deg) translate(-100px) rotate(30deg);
-    }
-
-    40% {
-        transform: rotate(100deg) translate(-100px) rotate(15deg);
-    }
-
-    45% {
-        transform: rotate(95deg) translate(-100px) rotate(-15deg);
+        transform: translateY(0);
     }
 
     50% {
-        transform: rotate(90deg) translate(-100px) rotate(15deg);
-    }
-
-    55% {
-        transform: rotate(85deg) translate(-100px) rotate(-15deg);
-    }
-
-    60% {
-        transform: rotate(80deg) translate(-100px) rotate(15deg);
+        opacity: 1;
+        transform: translateY(-110px);
     }
 
     100% {
         opacity: 1;
-        transform: rotate(0deg) translate(-100px) rotate(30deg);
+        transform: translateY(0);
     }
 }
 
-.fish_R-L {
+.fish {
     position: absolute;
     display: block;
     bottom: 0;
     left: var(--position);
     opacity: 0;
-    animation: pop_R-L 1.5s linear;
+    animation: pop 1.3s ease-in-out;
 }
 
-.fish_R-L>div {
-    content: url("../../img/2/fa.png");
+.fish>div {
+    content: url("../../media/img/1/love.png");
     border: 0;
     width: 50px;
-    transform: rotate(-90deg);
-}
-
-@keyframes pop_L-R {
-    0% {
-        opacity: 1;
-        transform: rotate(0deg) translate(-100px) rotate(-30deg);
-    }
-
-    40% {
-        transform: rotate(80deg) translate(-100px) rotate(-15deg);
-    }
-
-    45% {
-        transform: rotate(85deg) translate(-100px) rotate(15deg);
-    }
-
-    50% {
-        transform: rotate(90deg) translate(-100px) rotate(-15deg);
-    }
-
-    55% {
-        transform: rotate(95deg) translate(-100px) rotate(15deg);
-    }
-
-    60% {
-        transform: rotate(100deg) translate(-100px) rotate(-15deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(180deg) translate(-100px) rotate(-30deg);
-    }
-}
-
-.fish_L-R {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: var(--position);
-    opacity: 0;
-    animation: pop_L-R 1.5s linear;
-}
-
-.fish_L-R>div {
-    content: url("../../img/2/fa.png");
-    border: 0;
-    width: 50px;
-    transform: rotate(-90deg) scaleX(-1);
 }
